@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>谌海蓝科技 - 0cean1ake Technology</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22none%22 stroke=%22%2300e5ff%22 stroke-width=%228%22/><circle cx=%2250%22 cy=%2250%22 r=%2215%22 fill=%22%2300e5ff%22/></svg>">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="particles"></div>
+    
+    <header class="navbar">
+        <div class="logo">
+            <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:var(--primary-color);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:var(--secondary-color);stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <!-- Outer Ring -->
+                <circle cx="50" cy="50" r="45" fill="none" stroke="url(#logo-grad)" stroke-width="2" stroke-dasharray="20 10" />
+                <!-- Wave/Lake Motif -->
+                <path d="M25 60 Q40 40 50 60 T75 60" fill="none" stroke="url(#logo-grad)" stroke-width="5" stroke-linecap="round">
+                    <animate attributeName="d" values="M25 60 Q40 40 50 60 T75 60; M25 60 Q40 80 50 60 T75 60; M25 60 Q40 40 50 60 T75 60" dur="3s" repeatCount="indefinite" />
+                </path>
+                <!-- Central Dot/Core -->
+                <circle cx="50" cy="50" r="8" fill="var(--primary-color)">
+                    <animate attributeName="r" values="8;10;8" dur="2s" repeatCount="indefinite" />
+                </circle>
+            </svg>
+            <span>谌海蓝科技</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#hero">首页</a></li>
+                <li><a href="#fpga">FPGA智算</a></li>
+                <li><a href="#security">AI安全</a></li>
+                <li><a href="#ecommerce">AI消费</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 首屏 -->
+        <section id="hero" class="hero section">
+            <div class="hero-content fade-in">
+                <h1 class="glitch" data-text="重塑边缘 · 智引未来">重塑边缘 · 智引未来</h1>
+                <p class="subtitle">0cean1ake Technology / 谌海蓝科技</p>
+                <p class="description">
+                    致力于将大模型算力延展至边缘，筑牢AI时代的安全防线，重塑未来商业与生活方式。
+                </p>
+                <div class="cta-group">
+                    <a href="#fpga" class="btn btn-primary">探索我们的技术</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 业务一：FPGA大模型移植 -->
+        <section id="fpga" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">大模型 FPGA 边缘计算移植</h2>
+                <div class="content-grid">
+                    <div class="text-block fade-in slide-up">
+                        <h3>构建万物互联的真智能底座</h3>
+                        <p>我们将庞大、高耗能的云端大模型通过极致的量化与架构优化，移植至低功耗、高并发的 FPGA 硬件平台。</p>
+                        
+                        <div class="impact-box glass-panel">
+                            <h4>🌍 畅想：对人类社会的深远影响</h4>
+                            <ul>
+                                <li><strong>算力平民化：</strong>打破GPU算力垄断，大幅降低AI部署成本，让即使是最微小的终端设备也能拥有GPT级别的理解能力。</li>
+                                <li><strong>极致隐私与离线生存：</strong>医疗设备、智能汽车等无需时刻连网，数据不出端，从根本上解决隐私泄露与网络延迟导致的致命风险。</li>
+                                <li><strong>绿色可持续AI：</strong>FPGA 的定制化数据通路能将大模型推理的能耗降低数个数量级，助力人类在碳中和目标下享受AI红利。</li>
+                                <li><strong>新物种大爆发：</strong>赋予各种机器人、无人机独立且强大的思考中枢，推动人类社会步入高度自治的全面智能化时代。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="papers-block fade-in slide-up delay-1">
+                        <h3>前沿学术关联</h3>
+                        <p>我们在工程实现中，深受以下学术成果启发并持续跟进：</p>
+                        <div class="paper-cards">
+                            <a href="https://dl.acm.org/doi/10.1145/3626202.3637560" target="_blank" class="paper-card glass-panel interactive">
+                                <h5>FlightLLM: Efficient Large Language Model Inference with a Complete Mapping Flow on FPGAs</h5>
+                                <p class="paper-authors">FPGA 2024</p>
+                                <p class="paper-desc">展示了完整的FPGA映射流程，实现高效的LLM推理，通过硬件友好的定制大幅提高吞吐量。</p>
+                            </a>
+                            <div class="paper-card glass-panel interactive">
+                                <h5>AWQ: Activation-aware Weight Quantization for LLM Compression</h5>
+                                <p class="paper-authors">MLSys 2024</p>
+                                <p class="paper-desc">保护显著权重的量化方法，在极低比特率下保持模型性能，是FPGA有限片上资源部署的关键前置技术。</p>
+                            </div>
+                            <div class="paper-card glass-panel interactive">
+                                <h5>LUT-NN: Accelerating Neural Networks using Lookup Tables</h5>
+                                <p class="paper-authors">Hardware Architecture Research</p>
+                                <p class="paper-desc">探讨如何极致利用FPGA基础单元(LUT)直接进行网络计算，摆脱传统乘加器(MAC)的限制。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 成功案例：Vitis AI GPT-2 -->
+                <div class="case-study glass-panel fade-in slide-up mt-4">
+                    <div class="case-header">
+                        <h4>🚀 成功案例：基于 Vitis AI 的 GPT-2 边缘部署</h4>
+                        <span class="badge">Xilinx 平台</span>
+                    </div>
+                    <p class="case-desc">我们成功利用 <strong>Vitis AI</strong> 框架，将量化后的 <strong>GPT-2</strong> 模型高效部署至 Xilinx 异构计算平台（Zynq UltraScale+ MPSoC / Alveo）。</p>
+                    <div class="case-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">INT8</span>
+                            <span class="stat-label">极致量化</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">DPU</span>
+                            <span class="stat-label">硬件加速加速</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">15W</span>
+                            <span class="stat-label">超低端侧功耗</span>
+                        </div>
+                    </div>
+                    <p class="case-detail">通过深度优化 DPU 指令调度与模型计算图，在无网络连接的离线环境下，实现了接近云端精度的流畅自然语言生成能力，证明了 Transformer 架构在边缘端部署的可行性。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 业务二：AI时代的安全 -->
+        <section id="security" class="section dark-alt">
+            <div class="container">
+                <h2 class="section-title fade-in">AI 时代的安全守护</h2>
+                <div class="content-grid reverse">
+                    <div class="text-block fade-in slide-up">
+                        <h3>以魔法打败魔法，守护数字疆域</h3>
+                        <p>随着AI能力的指数级跃升，针对AI系统的攻击手段（如对抗样本、数据投毒、提示词注入）也层出不穷。我们致力于构建下一代主动防御体系。</p>
+                        <ul class="feature-list">
+                            <li>
+                                <strong>🛡️ 模型鲁棒性增强：</strong>
+                                在模型训练和推理阶段引入对抗性防御机制，确保大模型在面对恶意输入时仍能输出安全、可靠的结果。
+                            </li>
+                            <li>
+                                <strong>🧬 数据源投毒检测：</strong>
+                                利用高维空间异常检测算法，在海量训练数据中精准清洗被恶意篡改的“毒药”数据。
+                            </li>
+                            <li>
+                                <strong>🕸️ 智能自适应防火墙：</strong>
+                                部署基于强化学习的 AI Agent，实时监控、预测并阻断网络空间中变幻莫测的新型攻击模式。
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="visual-block fade-in slide-up delay-1">
+                        <div class="shield-animation">
+                            <div class="shield-core"></div>
+                            <div class="shield-ring ring-1"></div>
+                            <div class="shield-ring ring-2"></div>
+                            <div class="shield-ring ring-3"></div>
+                            <div class="threat-particle"></div>
+                            <div class="threat-particle t-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 业务三：AI电商消费 -->
+        <section id="ecommerce" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">AI 时代的电商消费重塑</h2>
+                <div class="content-grid">
+                    <div class="text-block fade-in slide-up">
+                        <h3>从“人找货”到“意图驱动”的全自动代办</h3>
+                        <p>未来的消费不再是繁琐的搜索、比价和看评测。我们正在研发高度智能的 <strong>Personal Shopping Agent (个人采购助理)</strong>。</p>
+                        <div class="agent-workflow">
+                            <div class="step">
+                                <span class="step-num">1</span>
+                                <div class="step-text">
+                                    <strong>意图理解</strong>
+                                    “帮我买一台适合程序员办公、且不伤眼的护眼显示器，预算三千内。”
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-num">2</span>
+                                <div class="step-text">
+                                    <strong>全网检索与真伪分析</strong>
+                                    AI自动跨越京东、淘宝、亚马逊，不仅抓取参数，更利用NLP分析上万条真实评价，剔除水军。
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-num">3</span>
+                                <div class="step-text">
+                                    <strong>自主决策与自动交易</strong>
+                                    在符合预算的范围内，综合硬件参数与物流时效，使用数字钱包自动完成下单购买。
+                                </div>
+                            </div>
+                        </div>
+                        <p class="highlight-text mt-4">
+                            <strong>颠覆性影响：</strong>这彻底将人类从繁杂的消费决策中解放出来，注意力重新回归生活本身；同时，也将迫使电商平台和品牌方放弃营销噱头，回归极致的性价比与产品质量，因为AI不吃任何“套路”。
+                        </p>
+                    </div>
+                    <div class="visual-block fade-in slide-up delay-1">
+                        <div class="shopping-bot-ui glass-panel">
+                            <div class="bot-header">
+                                <div class="bot-avatar"></div>
+                                <span>0cean1ake Shopping Agent</span>
+                            </div>
+                            <div class="bot-messages">
+                                <div class="msg user">我想买一把人体工学椅，腰部支撑要好。</div>
+                                <div class="msg bot">正在跨平台检索... 已过滤150款产品。<br>综合背部支撑评测与材质分析，推荐 Herman Miller Aeron (二手翻新, 高性价比) 或 保优金豪b。<br>已为您比价完毕，是否立即以 ¥1999 在官方旗舰店自动下单？</div>
+                                <div class="msg user">好的，买保优金豪b吧。</div>
+                                <div class="msg bot success">✅ 下单成功，预计明天下午送达。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 联系我们 -->
+        <section id="contact" class="section dark-alt">
+            <div class="container text-center">
+                <h2 class="section-title fade-in">联系我们</h2>
+                <div class="contact-info fade-in slide-up">
+                    <p class="description">携手探索智算未来，欢迎通过以下方式与我们取得联系。</p>
+                    <div class="contact-cards mt-4">
+                        <div class="contact-card glass-panel">
+                            <h4>📧 商业合作</h4>
+                            <p>business@0cean1ake.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <h2 class="footer-logo">0cean1ake</h2>
+            <p>谌海蓝科技</p>
+            <div class="footer-links mt-4">
+                <a href="privacy.html">隐私政策</a>
+                <span class="divider">|</span>
+                <a href="#contact">联系我们</a>
+            </div>
+            <p class="copyright">&copy; 2026 谌海蓝科技 (0cean1ake Technology). All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
